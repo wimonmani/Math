@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math game</title>
+    <link rel="stylesheet" href="stlye.css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit:400,300&subset=thai,latin' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="text1">
+        <h1>เกมคณิตศาสตร์</h1>
+    </div>
+
+    <div class="btn1">
+        <div class="col-12 start ">
+          <button type="button" class="btn btn-primary rounded-pill px-3"  onclick="start()">เริ่มเกม</button>
+        </div>
+      </div>
+
+      <div class="score">
+        <div class="col-12 mt-3" style="display: flex; justify-content: center;">
+          <div class="col-12 total">
+            <p class="score">คะแนน : </p>
+            <p class="score"  id="score"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 box">
+      <input type="text" id="number1" readonly>
+  </div>
+  <div class="col-12 box">
+  </br>
+      <p class="operator" id="mark">+</p>
+  </div>
+  <div class="col-12 box">
+      <input type="text" id="number2" readonly>
+  </div>
+  <div class="col-12 box">
+  </br>
+      <p class="operator">=</p>
+  </div>
+  <div class="col-12 box">
+      <input type="text" id="answer" class="intext11">
+  </div>
+  <div class="col-12 bt">
+      <button type="button" class="btn btn-light" onclick="selectmark('+')">+</button>
+      <button type="button" class="btn btn-light" onclick="selectmark('-')">-</button>
+      <button type="button" class="btn btn-light" onclick="selectmark('*')">&times;</button>
+      <button type="button" class="btn btn-light" onclick="selectmark('÷')">&divide;</button>
+  </div>
+
+      <div class="col-12 answer">
+          <button type="button" class="btn btn-success" onclick="response()">ตอบ</button>
+</div>
+
+          <div class="col-12 status mt-3">
+            <p class="statusanswer" id="result"></p>
+        </div>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="./java.js"></script>
