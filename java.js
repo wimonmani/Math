@@ -3,10 +3,10 @@ var number2 = document.getElementById('number2');
 var mark = document.getElementById('mark');
 var answer = document.getElementById('answer');
 var result = document.getElementById('result');
-var score = document.getElementById('score');
+var scores = document.getElementById('score');
 
 var num1, num2, sum, score = 0, point = 0;
-score.innerHTML = score + "/" + point;
+scores.innerHTML = score + "/" + point;
 
 function random() {
     num1 = Math.floor(Math.random() * 11);
@@ -51,7 +51,7 @@ function response() {
         result.style.color = 'red';
     }
     point += 1;
-    score.innerHTML = score + "/" + point;
+    scores.innerHTML = score + "/" + point;
     random();
 }
 
