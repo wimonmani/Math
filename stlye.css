@@ -26,6 +26,7 @@
     font-family: Kanit;
     font-size: 20px;
     margin-top: 30px;
+    margin-right: 30px;
     display: flex;
     justify-content: flex-end;
   }
